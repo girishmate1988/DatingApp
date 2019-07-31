@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorInterceptor } from './services/error.interceptor';
 import { AlertifyService } from './services/alertify.service';
+import {BsDropdownModule} from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AlertifyService } from './services/alertify.service';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [
     AuthService,
